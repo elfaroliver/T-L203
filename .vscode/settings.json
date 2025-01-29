@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "Heimadæmi\\Heimadæmi1"
+    ],
+    "java.project.referencedLibraries": [
+        "Heimadæmi\\Heimadæmi1\\lib\\algs4.jar"
+    ]
+}
