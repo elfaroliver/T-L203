@@ -14,5 +14,13 @@ public class Mystery {
         int n = Integer.parseInt(args[0]);
         Stack<Integer> S = new Stack<Integer>();
         // Ykkar kóði hér ...
+        while (n > 0) {
+            S.push(n % 2);
+            n = n / 2;
         }
+        while (!S.isEmpty()) {
+            System.out.print(S.pop());
+        }
+        System.out.println();
+    }
 }
