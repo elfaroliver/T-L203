@@ -10,9 +10,9 @@
 /////////////////////////////////////////////////////////////
 import edu.princeton.cs.algs4.*;
 public class Mystery {
-public static void main(String[] args) {
-int n = Integer.parseInt(args[0]);
-Stack<Integer> S = new Stack<Integer>();
-// Ykkar kóði hér ...
-}
+    public static void main(String[] args) {
+        int n = Integer.parseInt(args[0]);
+        Stack<Integer> S = new Stack<Integer>();
+        // Ykkar kóði hér ...
+        }
 }

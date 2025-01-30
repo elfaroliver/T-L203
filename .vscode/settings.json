@@ -3,6 +3,13 @@
         "Heimadæmi\\Heimadæmi1"
     ],
     "java.project.referencedLibraries": [
-        "Heimadæmi\\Heimadæmi1\\lib\\algs4.jar"
+        "c:\\Nám\\Vor25\\TÖL203\\Heimadæmi\\Heimadæmi1\\lib\\algs4.jar"
+    ],
+    "java.configuration.runtimes": [
+        {
+        "name": "JavaSE-21",
+        "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot"
+        }
     ]
+      
 }
