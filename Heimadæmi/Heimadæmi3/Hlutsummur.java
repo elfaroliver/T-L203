@@ -18,7 +18,9 @@ public class Hlutsummur {
 
         // Búa til slembigildi í fylkið (nota t.d. StdRandom.uniformInt())
         // FYLLA INN ...
-
+        for (int i = 0; i < N; i++) {
+            A[i] = StdRandom.uniformInt(N);
+        }
 
         // Taka tímann á útreikningi
         Stopwatch timer = new Stopwatch();
@@ -26,10 +28,9 @@ public class Hlutsummur {
         double eTime = timer.elapsedTime();
 
         StdOut.println("Elapsed time = " + eTime);
-        
+
         // Einföld stikkprufa til að athuga hvort rétt reiknað ...
         StdOut.println("A[2] + A[3] = " + (A[2] + A[3]));
         StdOut.println("B[2][3] = " + B[2][3]);
     }
 }
-
