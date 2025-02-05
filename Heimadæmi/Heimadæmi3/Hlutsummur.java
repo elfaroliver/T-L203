@@ -10,6 +10,12 @@ public class Hlutsummur {
         int[][] B = new int[N][N];
         // gefið reiknirit til að reikna hlutsummur
         // FYLLA INN ...
+        for (int i = 0; i < N; i++) {
+            B[i][i] = A[i];
+            for (int j = i + 1; j < N; j++) {
+                B[i][j] = B[i][j - 1] + A[j]; // Fyrra notað til að reikna seinna
+            }
+        }
         return B;
     }
     public static void main(String[] args) {
@@ -18,9 +24,9 @@ public class Hlutsummur {
 
         // Búa til slembigildi í fylkið (nota t.d. StdRandom.uniformInt())
         // FYLLA INN ...
-        for (int i = 0; i < N; i++) {
+        /*for (int i = 0; i < N; i++) {
             A[i] = StdRandom.uniformInt(N);
-        }
+        }*/
 
         // Taka tímann á útreikningi
         Stopwatch timer = new Stopwatch();
