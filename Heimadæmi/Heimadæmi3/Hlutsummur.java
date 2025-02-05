@@ -1,4 +1,3 @@
-
 /**********************************************************
 * Beinagrind að lausn á æfingadæmi í heimadæmum 3
 * Tölvunarfræði 2, vor 2025
