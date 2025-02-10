@@ -53,7 +53,7 @@ public class Nemandi implements Comparable<Nemandi>{
         raðast í lækkandi röð eftir meðaleinkunn. Skilið kóða aðferðarinnar og skjáskoti af
         keyrslu á NemendaVinnsla með 20 nemendum. */
 
-        if (this.mEink < 5) {
+        /*if (this.mEink < 5) {
             if (this.fEin < that.fEin) {
                 return -1;
             } else if (this.fEin < that.fEin) {
@@ -69,7 +69,20 @@ public class Nemandi implements Comparable<Nemandi>{
             } else {
                 return 0;
             }
-        } return 1; 
+        } return 1; */
+
+        if (this.mEink >= 5) {
+            if (this.fEin < that.fEin) {
+                return 1;
+            } else if (this.fEin > that.fEin) {
+                return -1;
+            } else {
+                return 0;
+            }
+        } else if (this.mEink < 5) {
+            return -1;
+        }
+        return 1;
     }
     // Búa til strengútgáfu af hlut til útprentunar
     public String toString() {
