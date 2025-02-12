@@ -31,7 +31,7 @@ public class Nemandi implements Comparable<Nemandi>{
         eininga (fyrir þá sem hafa sama fæðingarár). Skilið kóða aðferðarinnar og skjáskoti
         af keyrslu á NemendaVinnsla með 20 nemendum. */
 
-        /*if (this.fAr == that.fAr) {
+        if (this.fAr == that.fAr) {
             if (this.fEin < that.fEin) {
                 return 1;
             } else if (this.fEin > that.fEin) {
@@ -45,7 +45,7 @@ public class Nemandi implements Comparable<Nemandi>{
             return -1;
         } else {
             return 0;
-        }*/
+        }
 
         /*Útfærið enn aðra útgáfu af compareTo aðferðinni sem veldur því að nemendur sem
         hafa hafa lægri meðaleinkunn en 5.0 raðast á eftir öllum öðrum. Þessir föllnu
@@ -71,18 +71,29 @@ public class Nemandi implements Comparable<Nemandi>{
             }
         } return 1; */
 
-        if (this.mEink >= 5) {
-            if (this.fEin < that.fEin) {
-                return 1;
-            } else if (this.fEin > that.fEin) {
+        /*Útfærið enn aðra útgáfu af compareTo aðferðinni sem veldur því að nemendur sem
+        hafa hafa lægri meðaleinkunn en 5.0 raðast á eftir öllum öðrum. Þessir föllnu
+        nemendur raðast innbyrðis í hækkandi röð eftir fjölda eininga. Hinir nemendurnir
+        raðast í lækkandi röð eftir meðaleinkunn. Skilið kóða aðferðarinnar og skjáskoti af
+        keyrslu á NemendaVinnsla með 20 nemendum. */
+
+        /*if (this.mEink >= 5) {
+            if (this.mEink < that.mEink) {
                 return -1;
+            } else if (this.mEink > that.mEink) {
+                return 1;
             } else {
                 return 0;
             }
         } else if (this.mEink < 5) {
-            return -1;
-        }
-        return 1;
+            if (this.fEin < that.fEin) {
+                return -1;
+            } else {
+                return 1;
+            }
+        } else {
+            return 1;
+        }*/
     }
     // Búa til strengútgáfu af hlut til útprentunar
     public String toString() {
