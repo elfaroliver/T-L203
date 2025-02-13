@@ -31,7 +31,7 @@ public class Nemandi implements Comparable<Nemandi>{
         eininga (fyrir þá sem hafa sama fæðingarár). Skilið kóða aðferðarinnar og skjáskoti
         af keyrslu á NemendaVinnsla með 20 nemendum. */
 
-        if (this.fAr == that.fAr) {
+        /*if (this.fAr == that.fAr) {
             if (this.fEin < that.fEin) {
                 return 1;
             } else if (this.fEin > that.fEin) {
@@ -45,7 +45,7 @@ public class Nemandi implements Comparable<Nemandi>{
             return -1;
         } else {
             return 0;
-        }
+        }*/
 
         /*Útfærið enn aðra útgáfu af compareTo aðferðinni sem veldur því að nemendur sem
         hafa hafa lægri meðaleinkunn en 5.0 raðast á eftir öllum öðrum. Þessir föllnu
@@ -56,20 +56,52 @@ public class Nemandi implements Comparable<Nemandi>{
         /*if (this.mEink < 5) {
             if (this.fEin < that.fEin) {
                 return -1;
-            } else if (this.fEin < that.fEin) {
+            } else if (this.fEin > that.fEin) {
                 return 1;
             } else {
                 return 0;
             }
         } else if (this.mEink >= 5) {
-            if (this.fEin < that.fEin) {
-                return 1;
-            } else if (this.fEin > that.fEin) {
+            if (this.mEink > that.mEink) {
                 return -1;
+            } else if (this.mEink < that.mEink) {
+                return 1;
             } else {
                 return 0;
             }
-        } return 1; */
+        }
+        return 0;*/
+
+        if (this.mEink >= 5 && that.mEink >= 5) {
+            // Raða þeim með einkunn >= 5 í lækkandi röð eftir mEink
+            if (this.mEink < that.mEink) {
+                return 1;  // this kemur á eftir that
+            } else if (this.mEink > that.mEink) {
+                return -1; // this kemur fyrir that
+            } else {
+                // Ef mEink er jafnt, raða eftir fjölda eininga í hækkandi röð
+                if (this.fEin < that.fEin) {
+                    return -1;  // this kemur fyrir that
+                } else if (this.fEin > that.fEin) {
+                    return 1;   // this kemur á eftir that
+                } else {
+                    return 0;   // this og that eru jafnir
+                }
+            }
+        } else if (this.mEink < 5 && that.mEink < 5) {
+            // Föllnu nemendurnir (mEink < 5) raðast eftir fjölda eininga í hækkandi röð
+            if (this.fEin < that.fEin) {
+                return -1;  // this kemur fyrir that
+            } else if (this.fEin > that.fEin) {
+                return 1;   // this kemur á eftir that
+            } else {
+                return 0;   // this og that eru jafnir
+            }
+        } else {
+            // Nemendur með mEink >= 5 koma alltaf fyrir þá með mEink < 5
+            return (this.mEink >= 5) ? -1 : 1;
+        }
+        
 
         /*Útfærið enn aðra útgáfu af compareTo aðferðinni sem veldur því að nemendur sem
         hafa hafa lægri meðaleinkunn en 5.0 raðast á eftir öllum öðrum. Þessir föllnu
