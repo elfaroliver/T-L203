@@ -11,7 +11,16 @@ public class Silly {
     private Silly() { }
     public static void sort(Comparable[] a) {
     int N = a.length;
-    // Hér kemur kóðinn ykkar
+
+        while (!isSorted(a)) {
+            // Vel af handahófi heiltöluna i á bilinu 0 til N-2
+            int i = (int) (Math.random() * (N - 1));  // Random tala á bilinu 0 til N-2
+
+            // Ef a[i+1] er minna en a[i], þá víxla ég
+            if (less(a[i + 1], a[i])) {
+                exch(a, i, i + 1);
+            }
+        }
     }
     /***************************************************************************
     * Helper sorting functions.
@@ -48,7 +57,7 @@ public class Silly {
     public static void main(String[] args) {
         String[] a = StdIn.readAllStrings();
         Stopwatch timer = new Stopwatch();
-        Silly.sort(a);
+        //Silly.sort(a);
         double eTime = timer.elapsedTime();
         StdOut.println("elapsed time = " + eTime);
         // Ef við viljum athuga hvort fylkið sé raðað
