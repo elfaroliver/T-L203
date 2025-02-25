@@ -37,6 +37,11 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
+
+import java.util.Arrays;
+
+import edu.princeton.cs.algs4.*;
+
 public class Quick {
 
     // This class should not be instantiated.
@@ -174,13 +179,39 @@ public class Quick {
 
         // shuffle
         StdRandom.shuffle(a);
+        
+        for (int CUTOFF = 1; CUTOFF <= 25; CUTOFF++) {
+            // Búa til slembiFylki
+            double[] slembiFylki = new double[1000000];
+            for (int i = 0; i < 1000000; i++) {
+                slembiFylki[i] = StdRandom.uniform(1000000.0);
+            }
+
+            // Taka tímann fyrir röðun
+            Stopwatch timer = new Stopwatch();
+            Arrays.sort(slembiFylki);
+            double eTime = timer.elapsedTime();
+
+            // Prenta tímann
+            StdOut.println("CUTOFF = " + CUTOFF + ", Elapsed time = " + eTime);
+        }
+
+        /*double[] slembiFylki = new double[1000000];
+        for (int i = 0; i < 1000000; i++) {
+            slembiFylki[i] = StdRandom.uniform(0.0, 1000000.0);
+        }
+
+        Stopwatch timer = new Stopwatch();
+        double eTime = timer.elapsedTime();
+
+        StdOut.println("Elapsed time = " + eTime);
 
         // display results again using select
         StdOut.println();
         for (int i = 0; i < a.length; i++) {
             String ith = (String) Quick.select(a, i);
             StdOut.println(ith);
-        }
+        }*/
     }
 
 }
