@@ -173,7 +173,7 @@ public class Quick {
      */
     public static void main(String[] args) {
         String[] a = StdIn.readAllStrings();
-        Quick.sort(a);
+        //Quick.sort(a);
         show(a);
         assert isSorted(a);
 
@@ -187,31 +187,13 @@ public class Quick {
                 slembiFylki[i] = StdRandom.uniform(1000000.0);
             }
 
-            // Taka tímann fyrir röðun
+            // Stopwatch stuff
             Stopwatch timer = new Stopwatch();
-            Arrays.sort(slembiFylki);
+            Quick.sort(slembiFylki);
             double eTime = timer.elapsedTime();
 
-            // Prenta tímann
+            // Prentar tímann
             StdOut.println("CUTOFF = " + CUTOFF + ", Elapsed time = " + eTime);
         }
-
-        /*double[] slembiFylki = new double[1000000];
-        for (int i = 0; i < 1000000; i++) {
-            slembiFylki[i] = StdRandom.uniform(0.0, 1000000.0);
-        }
-
-        Stopwatch timer = new Stopwatch();
-        double eTime = timer.elapsedTime();
-
-        StdOut.println("Elapsed time = " + eTime);
-
-        // display results again using select
-        StdOut.println();
-        for (int i = 0; i < a.length; i++) {
-            String ith = (String) Quick.select(a, i);
-            StdOut.println(ith);
-        }*/
     }
-
 }
