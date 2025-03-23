@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi5;
+
 /******************************************************************************
  *  Compilation:  javac Merge.java
  *  Execution:    java Merge < input.txt
@@ -42,6 +44,9 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
+
+import edu.princeton.cs.algs4.*;
+
 public class Merge {
 
     // This class should not be instantiated.

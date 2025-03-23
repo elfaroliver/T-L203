@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi2;
+
 public class Vaxtarhradi {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi3;
+
 /******************************************************************************
  *  Compilation:  javac WeightedQuickUnionUF.java
  *  Execution:  java WeightedQuickUnionUF < input.txt
@@ -60,6 +62,9 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
+
+import edu.princeton.cs.algs4.*;
+
 public class WeightedQuickUnionUF {
     private int[] parent;   // parent[i] = parent of i
     private int[] size;     // size[i] = number of elements in subtree rooted at i

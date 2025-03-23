@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi5;
+
 /******************************************************************************
  *  Compilation:  javac Quick.java
  *  Execution:    java Quick < input.txt
@@ -184,12 +186,13 @@ public class Quick {
             // Búa til slembiFylki
             double[] slembiFylki = new double[1000000];
             for (int i = 0; i < 1000000; i++) {
-                slembiFylki[i] = StdRandom.uniform(1000000.0);
+                slembiFylki[i] = StdRandom.uniform(1000000);
             }
 
             // Stopwatch stuff
             Stopwatch timer = new Stopwatch();
-            Quick.sort(slembiFylki);
+            Double[] slembiFylkiComparable = Arrays.stream(slembiFylki).boxed().toArray(Double[]::new);
+            Quick.sort(slembiFylkiComparable);
             double eTime = timer.elapsedTime();
 
             // Prentar tímann

@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi3;
+
 public class Heimadaemi3komma3ab {
     
     public static int loop1(int N) {

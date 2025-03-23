@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi4;
+
 /******************************************************************************
 * Sýnisforrit sem vinnur með klasann Nemandi til að prófa samanburð
 * Tölvunarfræði 2, vor 2025

@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi1;
+
 /******************************************************************************
  *  Compilation:  javac LinkedListOfStrings.java
  *  Execution:    java LinkedListOfStrings

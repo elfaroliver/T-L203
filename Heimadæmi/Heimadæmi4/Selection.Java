@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi4;
+
 /******************************************************************************
  *  Compilation:  javac Selection.java
  *  Execution:    java  Selection < input.txt

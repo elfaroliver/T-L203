@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi8;
+
 /******************************************************************************
  *  Compilation:  javac LinearProbingHashST.java
  *  Execution:    java LinearProbingHashST < input.txt
@@ -38,6 +40,9 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
+
+import edu.princeton.cs.algs4.*;
+
 public class LinearProbingHashST<Key, Value> {
 
     // must be a power of 2

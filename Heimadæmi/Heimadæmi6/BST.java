@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi6;
+
 /******************************************************************************
  *  Compilation:  javac BST.java
  *  Execution:    java BST
@@ -23,8 +25,8 @@
  *
  ******************************************************************************/
 
-package edu.princeton.cs.algs4;
 
+import edu.princeton.cs.algs4.*;
 import java.util.NoSuchElementException;
 
 /**

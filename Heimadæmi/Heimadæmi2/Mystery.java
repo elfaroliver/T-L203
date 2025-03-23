@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi2;
+
 /////////////////////////////////////////////////////////////
 // Beinagrind að lausn á dæmi 1 í Heimadæmum 2.
 // Tekur inn heiltöluna n á skipanalínunni og prentar

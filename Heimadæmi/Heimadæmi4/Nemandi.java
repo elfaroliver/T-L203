@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi4;
+
 /********************************************************************
 * Beinagrind fyrir æfingadæmi á Heimadæmum 4
 * Tölvunarfræði 2, vor 2025

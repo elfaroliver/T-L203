@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi7;
+
 /******************************************************************************
  *  Compilation:  javac RedBlackBST.java
  *  Execution:    java RedBlackBST < input.txt
@@ -26,7 +28,7 @@
  *  X 7
  *
  ******************************************************************************/
-
+import edu.princeton.cs.algs4.*;
 import java.util.NoSuchElementException;
 
 /**

@@ -1,5 +1,4 @@
-import edu.princeton.cs.algs4.*;
-import java.util.NoSuchElementException;
+package Heimadæmi.Heimadæmi9;
 /******************************************************************************
  *  Compilation:  javac Digraph.java
  *  Execution:    java Digraph filename.txt
@@ -28,6 +27,8 @@ import java.util.NoSuchElementException;
  *  12: 9
  *
  ******************************************************************************/
+import edu.princeton.cs.algs4.*;
+import java.util.NoSuchElementException;
 
 /**
  *  The {@code Digraph} class represents a directed graph of vertices
@@ -73,8 +74,7 @@ public class Digraph {
      *
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
-     */
-    public Digraph(int V) {
+     */    public Digraph(int V) {
         if (V < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be non-negative");
         this.V = V;
         this.E = 0;

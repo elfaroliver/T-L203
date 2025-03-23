@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi1;
+
 import edu.princeton.cs.algs4.StdDraw;
 import java.awt.Font;
 

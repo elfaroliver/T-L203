@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi1;
+
 /////////////////////////////////////////////////////////////
 //  Beinagrind að lausn á dæmi 3 í Heimadæmum 1.
 //    Spila leik þar sem byrjað er með n krónur og svo í

@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi6;
+
 /******************************************************************************
  *  Compilation:  javac FrequencyCounter.java
  *  Execution:    java FrequencyCounter L < input.txt
@@ -36,6 +38,9 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
+
+import edu.princeton.cs.algs4.*;
+
 public class FrequencyCounter {
 
     // Do not instantiate.

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "Heimadæmi.Heimadæmi1.App",
+            "projectName": "TÖL203_8ba9eacb"
+        },
+        {
+            "type": "java",
             "name": "Sexur",
             "request": "launch",
             "mainClass": "Sexur",

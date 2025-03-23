@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi1;
+
 public class Sexur {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);

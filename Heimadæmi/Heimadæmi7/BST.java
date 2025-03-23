@@ -1,3 +1,5 @@
+package Heimadæmi.Heimadæmi7;
+
 /******************************************************************************
  *  Compilation:  javac BST.java
  *  Execution:    java BST
@@ -24,6 +26,7 @@
  ******************************************************************************/
 
 import java.util.NoSuchElementException;
+import edu.princeton.cs.algs4.*;
 
 /**
  *  The {@code BST} class represents an ordered symbol table of generic
