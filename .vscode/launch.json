@@ -37,6 +37,14 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "TÖL203_8ba9eacb"
+        },
+        {
+            "type": "java",
+            "name": "Digraph",
+            "request": "launch",
+            "mainClass": "Digraph",   // Þetta er nýja línan sem við bæta við
+            "args": ["tinyDG.txt", "0", "1", "2"],  // Setja inn þau argument sem þú vilt keyra með
+            "projectName": "TÖL203_8ba9eacb"
         }
     ]
 }
